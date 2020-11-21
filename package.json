@@ -2,6 +2,10 @@
   "name": "contavid",
   "version": "0.1.0",
   "private": true,
+  "serve": "vue-cli-service serve",
+  "build": "vue-cli-service build",
+  "postinstall": "npm run build",
+  "start": "node server.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
