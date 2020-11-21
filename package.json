@@ -2,14 +2,14 @@
   "name": "contavid",
   "version": "0.1.0",
   "private": true,
-  "serve": "vue-cli-service serve",
-  "build": "vue-cli-service build",
   "postinstall": "npm run build",
-  "start": "node server.js",
+  
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "dev": "nodemo server.js",
+    "start": "node server.js"
   },
   "dependencies": {
     "core-js": "^3.6.5",
