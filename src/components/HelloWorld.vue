@@ -19,7 +19,7 @@
           <h2 class="title"><span>COntaVID</span></h2>
           <img class="covid" src="https://www.megaidea.net/wp-content/uploads/2020/03/coronavirus01.png"/>
           <p class="account">¿NO ESTAS REGISTRADO?</p>
-          <button class="button" onclick="registrar()" >REGISTRARSE</button>
+          <button class="button" @click="registrar()" >REGISTRARSE</button>
        </div>
   </div>
 </div>
@@ -28,6 +28,19 @@
 <script>
 export default {
   name: 'HelloWorld',
+
+methods:{
+    registrar(){
+       //alert("Comunicate con el adminitrador.");
+           Swal.fire({
+           icon: 'error',
+           title: 'Oops...',
+           text: 'Comunicate con el adminitrador.',
+           confirmButtonText:  'VOLVER',
+           confirmButtonColor: 'rgb(91,158,84)'
+          })  
+    },
+ }
 }
 </script>
 
