@@ -10,7 +10,9 @@
                 <i class="fas fa-lock"></i>
                 <input type="password" placeholder="PIN">
             </div>
-            <button class="button submit" @click="logear()">ENTRAR</button>
+            <!--<script src="script.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>-->
+            <button class="button submit" @click="login()">ENTRAR</button>
         </form>
       </div>
 
@@ -33,6 +35,9 @@ methods:{
     registrar(){
         
     },
+    login(){
+      alert("holiwi")
+    }
  }
 }
 </script>
